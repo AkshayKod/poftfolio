@@ -1,0 +1,182 @@
+{
+  "profile": {
+    "name": "Akshay G",
+    "shortName": "Akshay",
+    "displayName": "AKSHAY G",
+    "tagline": "MCA Student • Full Stack Developer • React & Backend Enthusiast",
+    "role": "Full Stack Developer",
+    "specialization": "React · Node.js · MongoDB · REST APIs",
+    "location": "Mangalore, India",
+    "bio": "MCA student with hands-on experience in full-stack web development, API integration, and database-driven applications. Passionate about building scalable systems and learning modern cloud technologies. Quick learner focused on creating real-world digital solutions.",
+    "social": {
+      "github": "https://github.com/AkshayKod",
+      "linkedin": "https://www.linkedin.com/in/akshay-g-55821b270/",
+      "email": "acharyaakshay367@gmail.com",
+      "phone": "+91-9141030375"
+    }
+  },
+  "stats": [
+    { "label": "MCA Student", "value": "2024–Present" },
+    { "label": "React Developer", "value": "Frontend" },
+    { "label": "Backend Learner", "value": "Node.js" },
+    { "label": "API Integration", "value": "REST" }
+  ],
+  "skills": {
+    "categories": [
+      {
+        "name": "Languages",
+        "items": ["Java", "Python", "PHP", "JavaScript", "C"]
+      },
+      {
+        "name": "Frontend",
+        "items": ["React.js", "HTML5", "CSS3", "Bootstrap", "Tailwind CSS"]
+      },
+      {
+        "name": "Backend",
+        "items": ["Node.js", "REST APIs", "Express.js"]
+      },
+      {
+        "name": "Database",
+        "items": ["MongoDB", "SQL"]
+      },
+      {
+        "name": "Tools",
+        "items": ["Git", "GitHub", "Axios", "Docker", "Material UI", "PHPMailer"]
+      }
+    ]
+  },
+  "experience": [
+    {
+      "id": "exp-1",
+      "company": "Accolade Tech Solutions Pvt. Ltd.",
+      "role": "Web Development Intern",
+      "period": "Sept 2025 – Dec 2025",
+      "location": "Mangalore",
+      "summary": "Web development platform — responsive apps, database integration, and cloud fundamentals.",
+      "highlights": [
+        "Developed responsive applications",
+        "Database integration",
+        "Performance optimization",
+        "Cloud fundamentals"
+      ]
+    },
+    {
+      "id": "exp-2",
+      "company": "Codelab System",
+      "role": "Web Application Developer Intern",
+      "period": "May 2024 – June 2024",
+      "location": "Mangalore",
+      "summary": "Recipe Discovery & Search Platform — React apps with REST API integration.",
+      "highlights": [
+        "Built React applications",
+        "Integrated REST APIs",
+        "Improved UI performance",
+        "State management"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "recipe-master",
+      "title": "Recipe Master",
+      "subtitle": "Recipe search & filtering",
+      "description": "Responsive React-based recipe search and filtering system with dynamic API-driven results.",
+      "stack": ["React", "JavaScript", "API Integration"],
+      "role": "Solo Developer",
+      "year": "2024",
+      "link": "",
+      "github": "https://github.com/AkshayKod",
+      "highlight": true
+    },
+    {
+      "id": "home-bite",
+      "title": "Home Bite",
+      "subtitle": "Home Cooked Meal Delivery Platform",
+      "description": "Backend platform connecting customers, admins, and delivery partners with role-based workflows.",
+      "stack": ["Node.js", "MongoDB", "Express.js"],
+      "role": "Team of 2",
+      "year": "2025",
+      "link": "",
+      "github": "https://github.com/AkshayKod",
+      "highlight": false
+    },
+    {
+      "id": "prescription-mgmt",
+      "title": "Prescription Management & Digital Health",
+      "subtitle": "Healthcare platform",
+      "description": "Full-stack healthcare platform with secure authentication and automated communication.",
+      "stack": ["React", "Node.js", "MongoDB", "REST APIs"],
+      "role": "Solo Developer",
+      "year": "2025",
+      "link": "",
+      "github": "https://github.com/AkshayKod",
+      "highlight": false
+    }
+  ],
+  "education": [
+    {
+      "id": "edu-1",
+      "degree": "MCA — Master of Computer Application",
+      "institution": "Mangalore Institute of Technology & Engineering",
+      "period": "2024 – Present",
+      "detail": "Pursuing"
+    },
+    {
+      "id": "edu-2",
+      "degree": "BCA — Bachelor of Computer Application",
+      "institution": "SDM College Ujire",
+      "period": "2021 – 2024",
+      "detail": "CGPA: 6.23"
+    },
+    {
+      "id": "edu-3",
+      "degree": "PUC — Pre-University College",
+      "institution": "Anugraha PU College",
+      "period": "2018 – 2020",
+      "detail": "78.65%"
+    },
+    {
+      "id": "edu-4",
+      "degree": "SSLC — Secondary School Leaving Certificate",
+      "institution": "Govt High School Kakkinje",
+      "period": "2017 – 2018",
+      "detail": "78.96%"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "ach-1",
+      "title": "Event Head",
+      "description": "Led product launch coordination during an inter-college fest."
+    },
+    {
+      "id": "ach-2",
+      "title": "IT Fests",
+      "description": "Participated in multiple inter-college and intra-college IT fests."
+    },
+    {
+      "id": "ach-3",
+      "title": "Aptitude Training",
+      "description": "Completed 20-day program covering quantitative, logical, and verbal skills."
+    },
+    {
+      "id": "ach-4",
+      "title": "React.js Workshop",
+      "description": "Active participant in React workshops during degree and postgraduate studies."
+    },
+    {
+      "id": "ach-5",
+      "title": "Technical Seminars",
+      "description": "Regular attendee of technical workshops, seminars, and college tech events."
+    }
+  ],
+  "nav": [
+    { "id": "home", "label": "HOME", "href": "#home" },
+    { "id": "about", "label": "ABOUT", "href": "#about" },
+    { "id": "skills", "label": "SKILLS", "href": "#skills" },
+    { "id": "experience", "label": "EXPERIENCE", "href": "#experience" },
+    { "id": "projects", "label": "PROJECTS", "href": "#projects" },
+    { "id": "education", "label": "EDUCATION", "href": "#education" },
+    { "id": "contact", "label": "CONTACT", "href": "#contact" }
+  ]
+}
