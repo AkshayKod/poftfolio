@@ -77,6 +77,18 @@
   ],
   "projects": [
     {
+      "id": "event-management",
+      "title": "Dream Events Platform",
+      "subtitle": "Enterprise Event Management",
+      "description": "A full-stack, enterprise-grade event management platform featuring a multi-step client booking wizard and secure admin dashboard.",
+      "stack": ["Node.js", "Express", "HTML", "CSS", "JavaScript"],
+      "role": "Full Stack Developer",
+      "year": "2024",
+      "link": "https://event-management-system-seven-kappa.vercel.app",
+      "github": "https://github.com/AkshayKod/event-management-system",
+      "highlight": true
+    },
+    {
       "id": "recipe-master",
       "title": "Recipe Master",
       "subtitle": "Recipe search & filtering",
@@ -87,6 +99,18 @@
       "link": "",
       "github": "https://github.com/AkshayKod",
       "highlight": true
+    },
+    {
+      "id": "prescription-mgmt",
+      "title": "Prescription Management & Digital Health",
+      "subtitle": "Healthcare platform",
+      "description": "The Prescription project is a comprehensive digital healthcare platform designed to streamline medical workflows between Doctors, Patients, and Pharmacies.",
+      "stack": ["PHP", "MySQL", "Bootstrap", "JavaScript"],
+      "role": "Solo Developer",
+      "year": "2025",
+      "link": "https://prececription.vercel.app",
+      "github": "https://github.com/AkshayKod/prececription",
+      "highlight": false
     },
     {
       "id": "home-bite",
@@ -101,15 +125,27 @@
       "highlight": false
     },
     {
-      "id": "prescription-mgmt",
-      "title": "Prescription Management & Digital Health",
-      "subtitle": "Healthcare platform",
-      "description": "Full-stack healthcare platform with secure authentication and automated communication.",
-      "stack": ["React", "Node.js", "MongoDB", "REST APIs"],
-      "role": "Solo Developer",
-      "year": "2025",
-      "link": "",
-      "github": "https://github.com/AkshayKod",
+      "id": "crime-management",
+      "title": "Crime Management System",
+      "subtitle": "Secure Reporting System",
+      "description": "A digital platform for managing and reporting crime data efficiently.",
+      "stack": ["PHP", "HTML", "CSS", "JavaScript", "MySQL"],
+      "role": "Full Stack Developer",
+      "year": "2024",
+      "link": "https://crime-management-iota.vercel.app",
+      "github": "https://github.com/AkshayKod/crime-Management",
+      "highlight": false
+    },
+    {
+      "id": "e-commerce",
+      "title": "E-Commerce Platform",
+      "subtitle": "Online Shopping Store",
+      "description": "Responsive e-commerce platform with dynamic product listings and shopping cart functionality.",
+      "stack": ["JavaScript", "HTML", "CSS"],
+      "role": "Frontend Developer",
+      "year": "2024",
+      "link": "https://e-commerce-mu-flame-36.vercel.app",
+      "github": "https://github.com/AkshayKod/E-commerce",
       "highlight": false
     }
   ],
