@@ -1,73 +1,176 @@
-# Akshay G — Developer Portfolio
+# 🚀 Akshay G | Full Stack Developer Portfolio
 
-Welcome to the personal portfolio repository of **Akshay G**, an MCA student and Full Stack Developer passionate about building scalable systems, responsive web applications, and API integrations.
+Welcome to my personal developer portfolio! I'm **Akshay G**, an MCA student and passionate Full Stack Developer dedicated to creating modern, scalable, and user-friendly web applications.
 
-## 🔗 Live Demo
-*(Add your live hosting link here)*
+This portfolio showcases my projects, technical skills, achievements, and journey as a developer through an immersive and futuristic user experience.
 
-## 🚀 About the Project
+## 🌐 Live Demo
 
-This portfolio is a premium, futuristic single-page application built to showcase my skills, projects, and experiences. It features a dynamic UI, responsive design, and smooth animations.
+🔗 **Portfolio Website:** *(Add your deployed link here)*
+
+---
+
+## ✨ Features
+
+* 🎨 Modern and futuristic UI design
+* 📱 Fully responsive across all devices
+* ⚡ Smooth animations and transitions
+* 🌙 Interactive user experience
+* 📂 Dynamic project showcase
+* 🧩 Modular and reusable components
+* 📧 Easy-to-update content using JSON data
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Frontend Framework**: React 18
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS v4
-- **Animations**: Framer Motion
-- **Icons**: Lucide React
-- **Build Tool**: Vite
+| Category        | Technologies         |
+| --------------- | -------------------- |
+| Frontend        | React 18, TypeScript |
+| Styling         | Tailwind CSS v4      |
+| Animations      | Framer Motion        |
+| Icons           | Lucide React         |
+| Build Tool      | Vite                 |
+| Version Control | Git & GitHub         |
 
-## 👨‍💻 My Skills
+---
 
-- **Languages**: Java, Python, PHP, JavaScript, C
-- **Frontend**: React.js, HTML5, CSS3, Bootstrap, Tailwind CSS
-- **Backend**: Node.js, Express.js, REST APIs
-- **Database**: MongoDB, SQL
-- **Tools**: Git, GitHub, Docker, Material UI, PHPMailer
+## 👨‍💻 Technical Skills
+
+### 💻 Programming Languages
+
+* Java
+* Python
+* JavaScript
+* PHP
+* C
+
+### 🎨 Frontend Development
+
+* React.js
+* HTML5
+* CSS3
+* Bootstrap
+* Tailwind CSS
+* Material UI
+
+### ⚙️ Backend Development
+
+* Node.js
+* Express.js
+* REST API Development
+
+### 🗄️ Databases
+
+* MongoDB
+* MySQL
+* SQL
+
+### 🔧 Tools & Technologies
+
+* Git
+* GitHub
+* Docker
+* Postman
+* PHPMailer
+
+---
 
 ## 📂 Project Structure
 
-```
+```text
 src/
-  data/portfolio.json    # Portfolio content (skills, projects, bio)
-  hooks/usePortfolio.ts  # Typed data hook
-  types/portfolio.ts     # TypeScript interfaces
-  components/
-    layout/              # Navbar, footer, background effects
-    sections/            # Page sections (Hero, About, Projects)
-    ui/                  # Reusable UI components
+├── data/
+│   └── portfolio.json
+├── hooks/
+│   └── usePortfolio.ts
+├── types/
+│   └── portfolio.ts
+├── components/
+│   ├── layout/
+│   ├── sections/
+│   └── ui/
+└── App.tsx
 ```
 
-## 💻 Quick Start
+---
 
-To run this project locally on your machine:
+## 🚀 Getting Started
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/AkshayKod/poftfolio.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd portfolio
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-4. Start the development server:
-   ```bash
-   npm run dev
-   ```
+### 1️⃣ Clone the Repository
 
-Open [http://localhost:5173](http://localhost:5173) in your browser to view the portfolio.
+```bash
+git clone https://github.com/AkshayKod/portfolio.git
+```
+
+### 2️⃣ Navigate to the Project Folder
+
+```bash
+cd portfolio
+```
+
+### 3️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+### 4️⃣ Start the Development Server
+
+```bash
+npm run dev
+```
+
+Open your browser and visit:
+
+```text
+http://localhost:5173
+```
+
+---
 
 ## 📝 Content Management
 
-All portfolio data (bio, social links, projects, skills, education) is centralized in `src/data/portfolio.json`. You can easily update this JSON file to refresh the site content without needing to modify the React components.
+All portfolio content including:
 
-## 📬 Contact Me
+* Personal Information
+* Skills
+* Education
+* Projects
+* Experience
+* Social Media Links
 
-- **Email**: acharyaakshay367@gmail.com
-- **LinkedIn**: [Akshay G](https://www.linkedin.com/in/akshay-g-55821b270/)
-- **GitHub**: [AkshayKod](https://github.com/AkshayKod)
+is managed from:
+
+```text
+src/data/portfolio.json
+```
+
+Update this file to instantly refresh your portfolio without changing the React components.
+
+---
+
+## 🎯 Goals
+
+* Build impactful software solutions
+* Continuously learn new technologies
+* Contribute to open-source projects
+* Grow as a Full Stack Developer and Software Engineer
+
+---
+
+## 📬 Connect With Me
+
+📧 **Email:** <a href="mailto:acharyaakshay367@gmail.com">[acharyaakshay367@gmail.com](mailto:acharyaakshay367@gmail.com)</a>
+
+💼 **LinkedIn:** https://www.linkedin.com/in/akshay-g-55821b270/
+
+💻 **GitHub:** https://github.com/AkshayKod
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a **⭐ Star** on GitHub. It motivates me to keep learning and building amazing projects!
+
+### "Code. Learn. Build. Repeat. 🚀"
