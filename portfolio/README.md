@@ -1,73 +1,167 @@
-# Akshay G — Developer Portfolio
+# 🚀 Akshay G — Personal Developer Portfolio
 
-Welcome to the personal portfolio repository of **Akshay G**, an MCA student and Full Stack Developer passionate about building scalable systems, responsive web applications, and API integrations.
+<div align="center">
 
-## 🔗 Live Demo
-*(Add your live hosting link here)*
+![Portfolio Preview Banner](https://img.shields.io/badge/Akshay_G-Full_Stack_Developer-00ff87?style=for-the-badge&logo=react&logoColor=black)
+![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)
 
-## 🚀 About the Project
+<p align="center">
+  A state-of-the-art, high-performance developer portfolio built with <strong>React 19</strong>, <strong>TypeScript</strong>, <strong>Tailwind CSS v4</strong>, and <strong>Framer Motion</strong>.
+</p>
 
-This portfolio is a premium, futuristic single-page application built to showcase my skills, projects, and experiences. It features a dynamic UI, responsive design, and smooth animations.
+[View Demo](#-live-demo) • [Key Features](#-key-features) • [Tech Stack](#-tech-stack) • [Quick Start](#-quick-start) • [Project Structure](#-project-structure) • [License](#-license) • [Contact](#-contact--connect)
+
+</div>
+
+---
+
+## 👨‍💻 About Akshay G
+
+I am an **MCA Graduate (2024–2026)** from Mangalore Institute of Technology & Engineering and a **Full-Stack Web Developer** passionate about architecting scalable systems, building responsive web applications, and designing intuitive user interfaces.
+
+* 🎓 **MCA (2024–2026)**: Mangalore Institute of Technology & Engineering (CGPA: 7.15)
+* 🎓 **BCA (2021–2024)**: Sri Dharmasthala Manjunatheshwara College, Ujire (CGPA: 6.23)
+* 📄 **Published Research**: *Real-Time Sign Language Alphabet Recognition Using MobileNetV2 Transfer Learning* — IEEE Bangalore Section / ICNPCV 2026
+* 💼 **Experience**: Web Development Intern at Accolade Tech Solutions & Codelab System
+
+---
+
+## ✨ Key Features
+
+- 🌟 **Futuristic Glassmorphism & Cyberpunk Theme**: Custom dark aesthetic with neon emerald/cyan accents and dynamic glow effects.
+- ⚡ **Interactive 3D Tilt & Magnetic Effects**: Physics-based interactive buttons, spring-physics cursor tracking hero avatar, and smooth scroll animations via Framer Motion.
+- 📱 **Fully Responsive Layout**: Tailored for mobile, tablet, laptop, and ultra-wide displays.
+- 📄 **Direct Resume & Cover Letter Viewer/Download**: Integrated PDF links for quick recruiter review.
+- 🧩 **Centralized JSON Data Engine**: All bio, skills, experience, projects, certifications, and research data driven from `src/data/portfolio.json`.
+- 🔍 **Interactive Project Showcase**: Stacking glass cards with live preview links, tech badges, and GitHub repository links.
+- 🏆 **Certifications & Publications Display**: Highlighted credentials from TCS iON, Infosys, Accenture, JPMorgan Chase, and Udemy.
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Frontend Framework**: React 18
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS v4
-- **Animations**: Framer Motion
-- **Icons**: Lucide React
-- **Build Tool**: Vite
+| Domain | Technologies |
+| :--- | :--- |
+| **Frontend Core** | React 19, TypeScript, HTML5, CSS3 |
+| **Styling & Design** | Tailwind CSS v4, Custom CSS Variables, Glassmorphism |
+| **Animations & FX** | Framer Motion, Spring Physics, CSS Keyframes |
+| **Icons & UI** | Lucide React |
+| **Build & Tooling** | Vite 8, ESLint, TypeScript Compiler |
+| **Backend & APIs** | Node.js, Express.js, REST APIs, PHP, PHPMailer |
+| **Databases** | MongoDB, MySQL, SQL |
+| **AI & DevOps** | Generative AI, Prompt Engineering, Docker, Git, GitHub |
 
-## 👨‍💻 My Skills
-
-- **Languages**: Java, Python, PHP, JavaScript, C
-- **Frontend**: React.js, HTML5, CSS3, Bootstrap, Tailwind CSS
-- **Backend**: Node.js, Express.js, REST APIs
-- **Database**: MongoDB, SQL
-- **Tools**: Git, GitHub, Docker, Material UI, PHPMailer
+---
 
 ## 📂 Project Structure
 
+```text
+portfolio/
+├── public/
+│   ├── Akshay_G_Cover_Letter.pdf    # Downloadable Cover Letter
+│   ├── Akshay_G_Resume.pdf          # Downloadable Resume
+│   ├── profile.jpg                  # Profile Photo
+│   ├── profile_nobg.png             # Transparent Hero Avatar
+│   └── favicon.svg                  # Browser Favicon
+├── src/
+│   ├── components/
+│   │   ├── layout/                  # Navbar, Footer, BackgroundFX, CoverLetter
+│   │   ├── sections/                # Hero, About, Skills, Experience, Projects,
+│   │   │                            # Publications, Certifications, Education, Contact
+│   │   └── ui/                      # MagneticButton, SectionHeading, RevealOnScroll
+│   ├── data/
+│   │   └── portfolio.json           # 🎯 Centralized portfolio data
+│   ├── hooks/
+│   │   └── usePortfolio.ts          # Custom hook for portfolio data access
+│   ├── types/
+│   │   └── portfolio.ts             # Strict TypeScript definitions
+│   ├── utils/
+│   │   └── motion.ts                # Reusable Framer Motion animation variants
+│   ├── App.tsx                      # Root Application component
+│   ├── index.css                    # Tailwind CSS v4 setup & custom utilities
+│   └── main.tsx                     # React root mount
+├── LICENSE                          # MIT License
+├── index.html                       # HTML5 Template with SEO Meta tags
+├── package.json                     # Scripts & Dependencies
+├── tsconfig.json                    # TypeScript Configuration
+└── vite.config.ts                   # Vite configuration with Tailwind CSS plugin
 ```
-src/
-  data/portfolio.json    # Portfolio content (skills, projects, bio)
-  hooks/usePortfolio.ts  # Typed data hook
-  types/portfolio.ts     # TypeScript interfaces
-  components/
-    layout/              # Navbar, footer, background effects
-    sections/            # Page sections (Hero, About, Projects)
-    ui/                  # Reusable UI components
+
+---
+
+## 🚀 Quick Start
+
+Follow these steps to run the portfolio locally on your machine:
+
+### 1. Prerequisites
+Ensure you have [Node.js](https://nodejs.org/) (version 18+ recommended) installed.
+
+### 2. Clone the Repository
+```bash
+git clone https://github.com/AkshayKod/poftfolio.git
+cd poftfolio/portfolio
 ```
 
-## 💻 Quick Start
+### 3. Install Dependencies
+```bash
+npm install
+```
 
-To run this project locally on your machine:
+### 4. Run Development Server
+```bash
+npm run dev
+```
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/AkshayKod/poftfolio.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd portfolio
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-4. Start the development server:
-   ```bash
-   npm run dev
-   ```
+The application will start at:
+👉 **`http://localhost:5173`**
 
-Open [http://localhost:5173](http://localhost:5173) in your browser to view the portfolio.
+### 5. Build for Production
+```bash
+npm run build
+```
+The optimized production bundle will be generated in the `dist/` directory.
 
-## 📝 Content Management
+### 6. Preview Production Build
+```bash
+npm run preview
+```
 
-All portfolio data (bio, social links, projects, skills, education) is centralized in `src/data/portfolio.json`. You can easily update this JSON file to refresh the site content without needing to modify the React components.
+---
 
-## 📬 Contact Me
+## 📝 Customizing the Portfolio Data
 
-- **Email**: acharyaakshay367@gmail.com
-- **LinkedIn**: [Akshay G](https://www.linkedin.com/in/akshay-g-55821b270/)
-- **GitHub**: [AkshayKod](https://github.com/AkshayKod)
+To update any content on the site, simply edit:
+👉 `src/data/portfolio.json`
+
+You can update:
+- **Profile Info**: Name, taglines, bio, contact details, social URLs.
+- **Projects**: Titles, descriptions, tech stacks, live links, GitHub URLs.
+- **Experience**: Companies, roles, durations, and key achievements.
+- **Skills**: Skill groups and technology tags.
+- **Certifications & Education**: Degrees, grades, issuers, and dates.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📬 Contact & Connect
+
+- **Email**: [acharyaakshay367@gmail.com](mailto:acharyaakshay367@gmail.com)
+- **LinkedIn**: [linkedin.com/in/akshay-g-55821b270](https://www.linkedin.com/in/akshay-g-55821b270/)
+- **GitHub**: [github.com/AkshayKod](https://github.com/AkshayKod)
+- **Phone**: +91-9141030375
+- **Location**: Mangalore, Karnataka, India
+
+---
+
+<div align="center">
+  <sub>Designed & Developed with ❤️ by <strong>Akshay G</strong></sub>
+</div>

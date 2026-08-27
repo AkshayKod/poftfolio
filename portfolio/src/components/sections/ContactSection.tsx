@@ -1,3 +1,4 @@
+
 import { motion } from 'framer-motion'
 import { Mail, MapPin, Phone } from 'lucide-react'
 import { useState, type FormEvent } from 'react'
@@ -78,13 +79,18 @@ export function ContactSection() {
       value: social.phone,
       href: `tel:${social.phone.replace(/\s/g, '')}`,
     },
-    { icon: MapPin, label: 'Location', value: profile.location, href: undefined },
+    {
+      icon: MapPin,
+      label: 'Location & Address',
+      value: `${profile.location} (${profile.address})`,
+      href: undefined,
+    },
   ]
 
   return (
     <section id="contact" className="relative px-6 py-16 md:py-24">
       <div className="mx-auto max-w-7xl">
-        <SectionHeading number="07" title="Contact" subtitle="Let's build something together" />
+        <SectionHeading number="09" title="Contact" subtitle="Let's connect & build together" />
 
         <div className="grid gap-12 lg:grid-cols-2">
           <motion.div

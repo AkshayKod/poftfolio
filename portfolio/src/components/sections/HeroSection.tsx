@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { FileDown, FileText } from 'lucide-react'
 import { usePortfolio } from '../../hooks/usePortfolio'
 import { MagneticButton } from '../ui/MagneticButton'
 import { SocialLinks } from '../layout/SocialLinks'
@@ -13,29 +14,33 @@ const letterVariants = {
   }),
 }
 
-export function HeroSection() {
+interface HeroSectionProps {
+  onOpenCoverLetter?: () => void
+}
+
+export function HeroSection({ onOpenCoverLetter }: HeroSectionProps) {
   const { profile } = usePortfolio()
   const letters = profile.displayName.split('')
 
   return (
     <section
       id="home"
-      className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 pt-24 pb-16"
+      className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 pt-20 pb-10 md:pt-24 md:pb-14"
     >
-      <div className="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-8 lg:grid-cols-[1fr_auto] lg:gap-12">
+      <div className="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-6 lg:grid-cols-[1fr_auto] lg:gap-10">
         <div className="text-center lg:text-left">
-          <motion.p
-            className="mb-4 text-sm uppercase tracking-[0.35em] text-[#8a8a8a]"
+          <motion.div
+            className="mb-4 inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-emerald-400"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Portfolio 2026
-          </motion.p>
+            Portfolio 2026 • Ready to Work
+          </motion.div>
 
           <h1
             className="hero-heading font-bold leading-none tracking-tight"
-            style={{ fontSize: 'clamp(3rem, 12vw, 9rem)' }}
+            style={{ fontSize: 'clamp(3rem, 12vw, 8.5rem)' }}
           >
             {letters.map((char, i) => (
               <motion.span
@@ -53,7 +58,7 @@ export function HeroSection() {
           </h1>
 
           <motion.p
-            className="mt-6 max-w-xl text-lg text-[#bbccd7] md:text-xl lg:mx-0 mx-auto"
+            className="mt-6 max-w-2xl text-lg text-[#bbccd7] md:text-xl lg:mx-0 mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.9 }}
@@ -62,12 +67,29 @@ export function HeroSection() {
           </motion.p>
 
           <motion.div
-            className="mt-10 flex flex-wrap items-center justify-center gap-4 lg:justify-start"
+            className="mt-10 flex flex-wrap items-center justify-center gap-3.5 lg:justify-start"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 1.1 }}
           >
             <MagneticButton href="#projects">View Projects</MagneticButton>
+            <MagneticButton
+              href={profile.resumePdf}
+              download="Akshay_G_Resume.pdf"
+              variant="ghost"
+              className="gap-2 border-emerald-500/30 text-emerald-300 hover:bg-emerald-500/10"
+            >
+              <FileDown size={17} /> Resume
+            </MagneticButton>
+            {onOpenCoverLetter && (
+              <MagneticButton
+                onClick={onOpenCoverLetter}
+                variant="ghost"
+                className="gap-2 text-[#bbccd7]"
+              >
+                <FileText size={17} /> Cover Letter
+              </MagneticButton>
+            )}
             <MagneticButton href="#contact" variant="ghost">
               Contact Me
             </MagneticButton>

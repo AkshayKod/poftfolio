@@ -31,22 +31,6 @@ export function Footer() {
                 </a>
               </li>
             ))}
-            <li>
-              <a
-                href="#education"
-                className="text-sm text-[#bbccd7] transition-colors hover:text-white"
-              >
-                EDUCATION
-              </a>
-            </li>
-            <li>
-              <a
-                href="#achievements"
-                className="text-sm text-[#bbccd7] transition-colors hover:text-white"
-              >
-                ACHIEVEMENTS
-              </a>
-            </li>
           </ul>
         </div>
 

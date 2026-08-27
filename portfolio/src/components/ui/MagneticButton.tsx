@@ -8,6 +8,9 @@ interface MagneticButtonProps {
   onClick?: () => void
   type?: 'button' | 'submit'
   variant?: 'primary' | 'ghost'
+  download?: boolean | string
+  target?: string
+  rel?: string
 }
 
 export function MagneticButton({
@@ -17,6 +20,9 @@ export function MagneticButton({
   onClick,
   type = 'button',
   variant = 'primary',
+  download,
+  target,
+  rel,
 }: MagneticButtonProps) {
   const ref = useRef<HTMLDivElement>(null)
   const x = useMotionValue(0)
@@ -50,7 +56,7 @@ export function MagneticButton({
       style={{ x: springX, y: springY }}
       onMouseMove={handleMouse}
       onMouseLeave={reset}
-      className={`inline-flex cursor-pointer items-center justify-center rounded-full px-8 py-3.5 text-sm font-semibold uppercase tracking-wider transition-shadow duration-300 hover:shadow-[0_0_40px_rgba(16,185,129,0.45)] ${baseClass} ${className}`}
+      className={`inline-flex cursor-pointer items-center justify-center gap-2 rounded-full px-8 py-3.5 text-sm font-semibold uppercase tracking-wider transition-shadow duration-300 hover:shadow-[0_0_40px_rgba(16,185,129,0.45)] ${baseClass} ${className}`}
       whileHover={{ scale: 1.04 }}
       whileTap={{ scale: 0.98 }}
     >
@@ -60,7 +66,14 @@ export function MagneticButton({
 
   if (href) {
     return (
-      <a href={href} className="inline-block" onClick={onClick}>
+      <a
+        href={href}
+        className="inline-block"
+        onClick={onClick}
+        download={download}
+        target={target}
+        rel={rel}
+      >
         {inner}
       </a>
     )

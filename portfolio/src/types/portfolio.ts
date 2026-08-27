@@ -15,8 +15,12 @@ export interface Profile {
   role: string
   specialization: string
   location: string
+  address: string
   bio: string
   social: SocialLinks
+  hobbies: string[]
+  resumePdf: string
+  coverLetterPdf: string
 }
 
 export interface StatItem {
@@ -50,6 +54,8 @@ export interface ProjectItem {
   link: string
   github: string
   highlight: boolean
+  image?: string
+  pdf?: string
 }
 
 export interface EducationItem {
@@ -60,10 +66,34 @@ export interface EducationItem {
   detail?: string
 }
 
+export interface PublicationItem {
+  id: string
+  title: string
+  conference: string
+  association: string
+  date: string
+  description: string
+  tags: string[]
+  paperPdf?: string
+  image?: string
+  certificateImage?: string
+}
+
+export interface CertificationItem {
+  id: string
+  title: string
+  issuer: string
+  year: string
+  topics?: string[]
+  image?: string
+  pdfUrl?: string
+}
+
 export interface AchievementItem {
   id: string
   title: string
   description: string
+  image?: string
 }
 
 export interface NavLink {
@@ -78,7 +108,10 @@ export interface PortfolioData {
   skills: { categories: SkillCategory[] }
   experience: ExperienceItem[]
   projects: ProjectItem[]
+  publications: PublicationItem[]
+  certifications: CertificationItem[]
   education: EducationItem[]
   achievements: AchievementItem[]
   nav: NavLink[]
 }
+

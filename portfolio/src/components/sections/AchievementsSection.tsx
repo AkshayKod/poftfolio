@@ -1,3 +1,4 @@
+
 import { motion } from 'framer-motion'
 import { Award, Trophy, BookOpen, Code2, Mic } from 'lucide-react'
 import { usePortfolio } from '../../hooks/usePortfolio'
@@ -13,9 +14,9 @@ export function AchievementsSection() {
     <section id="achievements" className="relative px-6 py-16 md:py-24">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
-          number="06"
-          title="Achievements"
-          subtitle="Activities & milestones"
+          number="08"
+          title="Achievements & Activities"
+          subtitle="Co-curricular & leadership milestones"
         />
 
         <motion.div
@@ -31,14 +32,26 @@ export function AchievementsSection() {
               <motion.div
                 key={item.id}
                 variants={scaleIn}
-                className="glass-card rounded-2xl p-6 transition-shadow hover:shadow-[0_0_40px_rgba(16,185,129,0.12)]"
+                className="glass-card flex flex-col justify-between overflow-hidden rounded-2xl p-6 transition-shadow hover:shadow-[0_0_40px_rgba(16,185,129,0.12)]"
                 whileHover={{ y: -6, scale: 1.02 }}
               >
-                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-white/5 text-emerald-400">
-                  <Icon size={20} />
+                <div>
+                  <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-white/5 text-emerald-400">
+                    <Icon size={20} />
+                  </div>
+                  <h3 className="font-semibold text-white">{item.title}</h3>
+                  <p className="bio-text mt-2 text-sm text-[#8a8a8a]">{item.description}</p>
                 </div>
-                <h3 className="font-semibold text-white">{item.title}</h3>
-                <p className="bio-text mt-2 text-sm text-[#8a8a8a]">{item.description}</p>
+
+                {item.image && (
+                  <div className="mt-4 overflow-hidden rounded-xl border border-white/10">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="h-32 w-full object-cover transition-transform duration-300 hover:scale-105"
+                    />
+                  </div>
+                )}
               </motion.div>
             )
           })}

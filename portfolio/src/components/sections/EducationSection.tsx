@@ -10,7 +10,7 @@ export function EducationSection() {
   return (
     <section id="education" className="relative px-6 py-16 md:py-24">
       <div className="mx-auto max-w-7xl">
-        <SectionHeading number="05" title="Education" subtitle="Academic background" />
+        <SectionHeading number="07" title="Education" subtitle="Academic background" />
 
         <div className="grid gap-6 md:grid-cols-2">
           {education.map((item, index) => (

@@ -24,13 +24,13 @@ export function HeroAvatar() {
   }, [mouseX, mouseY])
 
   return (
-    <div className="relative mx-auto flex h-[380px] w-[280px] items-center justify-center sm:h-[460px] sm:w-[340px] md:h-[520px] md:w-[380px] lg:h-[600px] lg:w-[440px]">
+    <div className="relative mx-auto flex h-[340px] w-[270px] items-center justify-center sm:h-[420px] sm:w-[320px] md:h-[470px] md:w-[360px] lg:h-[530px] lg:w-[410px] -mt-4 sm:-mt-6 lg:-mt-12">
       <motion.div
         className="absolute inset-0 rounded-full accent-gradient opacity-40 blur-3xl"
         style={{ x: glowX, y: glowY }}
       />
       <motion.div
-        className="relative z-10"
+        className="relative z-10 flex h-full w-full items-center justify-center"
         style={{ x: headX, y: headY }}
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -39,13 +39,13 @@ export function HeroAvatar() {
         <img
           src="/profile_nobg.png"
           alt="Profile"
-          className="h-full w-full rounded-3xl object-cover drop-shadow-2xl"
+          className="max-h-full max-w-full object-contain object-top drop-shadow-[0_20px_50px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:scale-[1.02]"
         />
       </motion.div>
       {[...Array(6)].map((_, i) => (
         <motion.span
           key={i}
-          className="absolute h-1.5 w-1.5 rounded-full bg-emerald-400/60"
+          className="absolute h-1.5 w-1.5 rounded-full bg-emerald-400/60 pointer-events-none"
           style={{
             left: `${20 + i * 12}%`,
             top: `${10 + (i % 3) * 25}%`,
